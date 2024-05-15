@@ -9,7 +9,7 @@ user_bp = Blueprint('user', __name__)
 
 # Definimos las rutas "/" asociada a la funcion usuarios
 # que nos devuelve la vista de usuarios
-@user_bp.route('/')
+@user_bp.route('/users')
 def usuarios():
     # Obtenemos todos los usuarios
     users = User.get_all()
